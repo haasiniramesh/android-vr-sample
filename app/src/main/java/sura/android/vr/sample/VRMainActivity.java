@@ -5,9 +5,11 @@ import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+
+import timber.log.Timber;
 
 public class VRMainActivity extends AppCompatActivity {
 
@@ -26,6 +28,12 @@ public class VRMainActivity extends AppCompatActivity {
                         .setAction("Action", null).show();
             }
         });
+
+        Timber.tag(VRMainActivity.class.getSimpleName());
+
+        Timber.d("Activity Created");
+        Timber.i("Article open %s from '%s'.", "0000001", "news");
+
     }
 
     @Override
