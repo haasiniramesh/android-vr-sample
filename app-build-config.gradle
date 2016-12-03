@@ -1,0 +1,19 @@
+/**
+ *  BUILD VERSION INFORMATION CONFIG.
+ *      - These are used for app version declaration in the manifest, as well as publishing Crashlytics.
+ */
+
+ext {
+
+    build_versionMajor = 1  // Set this for product's major release version
+    build_versionMinor = 0  // Set this for product's minor release version
+    build_versionPatch = 0  // Set this for product's patch release version
+
+    // Increment this for every build
+    build_sequence_number = 0 // Build sequence for the product' iteration
+    // Reset it to 0 when product's major/minor/patch attributes get updated
+
+    // Increment this for every build
+    version_code = 1 // Apk's versionCode. Keeps growing, no reset
+}
+
